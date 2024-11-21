@@ -161,14 +161,14 @@ cp -r data/val/DATASET_X/* data/test/DATASET_X/
 Custom Dataset with *test* splitting
 - fake
 ```
-python -u guided-diffusion/compute_feature.py --images_dir=DATASET_X/test/ai \
+python -u guided-diffusion/compute_feature.py --images_dir=DATASET_X/test/1_fake \
                                               --recons_dir=data/test/DATASET_X/1_fake \
                                               --model_path=256x256_diffusion_uncond.pt \
                                               --time_step=0
 ```
 - real
 ```
-python -u guided-diffusion/compute_feature.py --images_dir=DATASET_X/test/nature \
+python -u guided-diffusion/compute_feature.py --images_dir=DATASET_X/test/0_real \
                                               --recons_dir=data/test/DATASET_X/0_real \
                                               --model_path=256x256_diffusion_uncond.pt \
                                               --time_step=0
